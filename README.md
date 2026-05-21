@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project tackles a binary classification problem: predicting whether a bank customer will leave (`Exited = 1`) based on their demographic and account characteristics. It is built as an **educational project**, with the intent of comparing three model families of increasing complexity — Logistic Regression, XGBoost, and a Multi-Layer Perceptron — and drawing honest conclusions about when complexity helps and when it does not.
-
-The central argument running through the project is this: **a more complex model is not automatically a better model**. The right choice depends on the nature of the dataset, the business objective, and the evaluation metric. This project demonstrates that concretely, on a real dataset, with real trade-offs.
+This project tackles a binary classification problem: predicting whether a bank customer will leave (`Exited = 1`) based on their demographic and account characteristics. It is built as an **educational project**, with the intent of comparing three model families of increasing complexity : Logistic Regression, XGBoost, and a Multi-Layer Perceptron.
 
 ---
 
@@ -160,7 +158,7 @@ All three models use a **custom decision threshold** rather than the default 0.5
 
 ## Key Takeaway: Complexity is not the best choice
 
-This project is designed to illustrate a principle that is often overlooked in practice.
+This project is designed to illustrate a principle that is often overlooked in practice : **a more complex model is not automatically a better model**. The right choice depends on the nature of the dataset, the business objective, and the evaluation metric. This project demonstrates that concretely, on a real dataset, with real trade-offs.
 
 XGBoost outperforms the MLP on this dataset despite being a shallower model in terms of representational capacity. The reasons are structural:
 
