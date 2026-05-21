@@ -140,7 +140,7 @@ All three models use a **custom decision threshold** rather than the default 0.5
 
 ### Multi-Layer Perceptron (PyTorch)
 
-**Architecture:** `[input → 128 → 64 → 32 → 1]` with ReLU activations and Dropout (p=0.3) between layers. Output is a raw logit; `BCEWithLogitsLoss` is used as the loss function.
+**Architecture:** Architecture: 3 hidden layers with 128, 64, and 32 neurons respectively, followed by a single output neuron  - `[input → 128 → 64 → 32 → 1]` with ReLU activations and Dropout (p=0.3) between layers. Output is a raw logit; `BCEWithLogitsLoss` is used as the loss function.
 
 **Optimiser:** Adam with `lr=0.001` and L2 regularisation via `weight_decay=1e-4`.
 
@@ -158,7 +158,7 @@ All three models use a **custom decision threshold** rather than the default 0.5
 
 ---
 
-## Key Takeaway: Complexity is Not a Virtue
+## Key Takeaway: Complexity is not the best choice
 
 This project is designed to illustrate a principle that is often overlooked in practice.
 
